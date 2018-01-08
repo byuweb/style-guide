@@ -22,7 +22,7 @@ This repository includes specs for byu-theme-components and other components. Al
 * Consider how the image handles at different breakpoints. 
 * What image types are appropriate
 * Please use svg’s whenever possible.  This means anything but a photo should be SVG. SVG is Scalable vector graphic. It performs well at small and large and is a smaller file.
-* Photos should be jpg.
+* Photos should be jpg or png.
 8. Use Cases & Corner cases
 * The specs should specify how the design handles common and unique cases.
 
