@@ -39,7 +39,7 @@ Using two similar fonts together can clash dramatically. Typically, you pair two
 For instance, Gotham and Vitesse, or Gotham and Sentinel. 
 Gotham and Sentinel is a good font pairing because Gotham is sans-serif (without serif) and has straighter glyphs. Sentinel has serifs and more curve and thickness variation in it's letters.
 For instance, calendar.byu.edu uses Gotham and Sentinel.
-[ image example]
+![Calendar Font Pairing Example](/general-visuals/calendar-dates-font-pairing.png)
 
 
 [ We need an image and some examples of many appropriate font pairings]
