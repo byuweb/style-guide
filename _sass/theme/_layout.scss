@@ -1,0 +1,13 @@
+
+.page-content {
+    padding: 16px;
+    box-sizing: border-box;
+
+    flex-grow: 1;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

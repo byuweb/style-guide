@@ -1,0 +1,22 @@
+---
+---
+
+@import "theme/mixins";
+
+#hero {
+  width: 100%;
+  position: relative;
+}
+.page-content {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.collections {
+    @include limited-width;
+}
+
+.card-image {
+  max-height: 150px;
+}
