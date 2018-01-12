@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
-  style:
+  specs_style:
     output: true
     name: Style
     order: 1
@@ -32,7 +32,7 @@ collections:
       - color palettes
       - typography
       - iconography
-  theme:
+  specs_theme:
     output: true
     name: Theme
     order: 2
@@ -42,19 +42,19 @@ collections:
       - header
       - footer
       - navigation
-  layout:
+  specs_layout:
     output: true
     name: Layout
     order: 3
     description: >-
       Recommendations and patterns for overall page structure
-  organization:
+  specs_organization:
     output: true
     name: Organization
     order: 4
     description: >-
       How to assemble pages into one cohesive site
-  components:
+  specs_components:
     output: true
     name: Components
     order: 5
@@ -64,7 +64,7 @@ collections:
       - heroes
       - cards
       - buttons
-  patterns:
+  specs_patterns:
     output: true
     name: Patterns
     order: 6

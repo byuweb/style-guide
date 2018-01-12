@@ -3,3 +3,73 @@ layout: default
 ---
 
 <link rel="stylesheet" href="{{ '/assets/spec.css' | relative_url }}">
+
+<style>
+  .spec-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .spec-wrapper > * {
+    padding: 8px;
+  }
+
+  .main {
+    width: 100%;
+    max-width: 1200px;
+    flex-shrink: 1;
+  }
+
+  .sidebar {
+    /* width: 300px; */
+    width: calc((100vw - 1200px) / 2);
+    background-color: #e6e6e6;
+    color: #002e5d;
+    text-align: center;
+    box-sizing: border-box;
+
+    font-family: Gotham A,Gotham B,Helvetica,sans-serif;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar ul li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 46, 93, 0.25);
+  }
+
+  .sidebar ul li:hover {
+    background-color: #c5c5c5;
+  }
+
+  .sidebar a {
+    color: #002e5d;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+</style>
+
+<div class="spec-wrapper">
+  <div class="sidebar">
+    {% assign collection = site.collections | where: "label", page.collection | first %}
+    <ul>
+    {% for doc in collection.docs %}
+      <li><a href="{{doc.url | relative_url}}"
+        class="{% if doc.url == page.url %}active{% endif %}">{{doc.title}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="main">{{ content }}</div>
+</div>
