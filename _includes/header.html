@@ -1,6 +1,11 @@
 
 <byu-header role="banner">
-  <span slot="site-title">{{ site.title | escape }}</span>
+  {% if page.collection %}
+  {% assign collection = site.collections | where: "label", page.collection | first %}
+  <span slot="site-title">Style Guide - {{ collection.name }}</span>
+  {% else %}
+  <span slot="site-title">Style Guide{% if page.title %} - {{page.title}}{% endif %}</span>
+  {% endif %}
   <byu-search slot="search"></byu-search>
   <byu-menu slot="nav">
     {% assign collections = site.collections | sort: 'order' %}

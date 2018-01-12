@@ -65,8 +65,9 @@ layout: default
 <div class="spec-wrapper">
   <div class="sidebar">
     {% assign collection = site.collections | where: "label", page.collection | first %}
+    {% assign docs = collection.docs | where_exp:"item","item.title != 'Index'" %}
     <ul>
-    {% for doc in collection.docs %}
+    {% for doc in docs %}
       <li><a href="{{doc.url | relative_url}}"
         class="{% if doc.url == page.url %}active{% endif %}">{{doc.title}}</a></li>
     {% endfor %}
