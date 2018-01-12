@@ -1,3 +1,9 @@
+---
+title: Header
+layout: spec
+order: 1
+---
+
 # Header Specifications
 The Header stretches to full width by default, the content can be constrained to custom width. The height is set at 55px.
 

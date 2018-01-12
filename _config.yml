@@ -21,6 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/byu-style-guide" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+encoding: utf-8
+
 collections:
   specs_style:
     output: true
@@ -84,7 +86,6 @@ livereload: true
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - specs
   - Gemfile
   - Gemfile.lock
   - node_modules

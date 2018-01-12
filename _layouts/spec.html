@@ -5,9 +5,16 @@ layout: default
 <link rel="stylesheet" href="{{ '/assets/spec.css' | relative_url }}">
 
 <style>
-  .spec-wrapper {
+  .page-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .spec-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .spec-wrapper > * {
@@ -20,7 +27,7 @@ layout: default
     flex-shrink: 1;
   }
 
-  .sidebar {
+  .secondary-nav {
     /* width: 300px; */
     width: calc((100vw - 1200px) / 2);
     min-width: 300px;
@@ -32,27 +39,27 @@ layout: default
     font-family: Gotham A,Gotham B,Helvetica,sans-serif;
   }
 
-  .sidebar ul {
+  .secondary-nav ul {
     list-style: none;
     margin: 0px;
     padding: 0;
   }
 
-  .sidebar ul li {
+  .secondary-nav ul li {
     margin: 0;
     padding: 0;
     transition: background-color 0.3s;
   }
 
-  .sidebar ul li:not(:last-of-type) {
+  .secondary-nav ul li:not(:last-of-type) {
     border-bottom: 1px solid rgba(0, 46, 93, 0.25);
   }
 
-  .sidebar ul li:hover {
+  .secondary-nav ul li:hover {
     background-color: #c5c5c5;
   }
 
-  .sidebar a {
+  .secondary-nav a {
     color: #002e5d;
     display: block;
     width: 100%;
@@ -63,7 +70,7 @@ layout: default
 </style>
 
 <div class="spec-wrapper">
-  <div class="sidebar">
+  <div class="secondary-nav">
     {% assign collection = site.collections | where: "label", page.collection | first %}
     {% assign docs = collection.docs | where_exp:"item","item.title != 'Index'" %}
     <ul>

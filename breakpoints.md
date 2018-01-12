@@ -9,4 +9,3 @@ Tablet/Ipad Landscape and above
 
 ### 768px 
 Tablet/Ipad Portrait width up to 1024px
-
