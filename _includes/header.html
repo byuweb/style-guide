@@ -1,11 +1,13 @@
 
-<byu-header role="banner">
-  {% if page.collection %}
-  {% assign collection = site.collections | where: "label", page.collection | first %}
-  <span slot="site-title">Style Guide - {{ collection.name }}</span>
-  {% else %}
-  <span slot="site-title">Style Guide{% if page.title %} - {{page.title}}{% endif %}</span>
-  {% endif %}
+<byu-header role="banner" >
+  <a slot="site-title" href="{{ '/' | relative_url }}">
+    {% if page.collection %}
+    {% assign collection = site.collections | where: "label", page.collection | first %}
+    Style Guide - {{ collection.name }}
+    {% else %}
+    Style Guide{% if page.title %} - {{page.title}}{% endif %}
+    {% endif %}
+  </a>
   <byu-search slot="search"></byu-search>
   <byu-menu slot="nav">
     {% assign collections = site.collections | sort: 'order' %}
