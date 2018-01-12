@@ -22,9 +22,9 @@ COPY Gemfile Gemfile.lock /usr/src/app-setup/
 
 RUN bundle
 
-WORKDIR /usr/src/app
+WORKDIR /www
 
-VOLUME /usr/src/app
+VOLUME /www
 
 EXPOSE 4000
 
