@@ -26,9 +26,6 @@ layout: default
   }
 
   .secondary-nav {
-    /* width: 300px; */
-    /* width: calc((100vw - 1200px) / 2); */
-    /* min-width: 300px; */
     background-color: #e6e6e6;
     color: #002e5d;
     text-align: center;
@@ -71,12 +68,17 @@ layout: default
     text-decoration: none;
     box-sizing: border-box;
   }
+
+  .main img {
+    max-width: 100%;
+  }
 </style>
 
 <div class="spec-wrapper">
+  {% if page.collection %}
   <div class="secondary-nav">
     {% assign collection = site.collections | where: "label", page.collection | first %}
-    {% assign docs = collection.docs | where_exp:"item","item.title != 'Index'" %}
+    {% assign docs = collection.docs | where_exp:"item","item.title != 'Index'" | sort: "title" | sort: "order" %}
     <ul>
     {% for doc in docs %}
       <li><a href="{{doc.url | relative_url}}"
@@ -84,5 +86,7 @@ layout: default
     {% endfor %}
     </ul>
   </div>
+  {% endif %}
+
   <div class="main">{{ content }}</div>
 </div>

@@ -23,6 +23,15 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 encoding: utf-8
 
+defaults:
+  -
+    scope:
+      path: ""
+      # type: "pages"
+    values:
+      layout: "spec"
+      order: 100
+
 collections:
   specs_style:
     output: true

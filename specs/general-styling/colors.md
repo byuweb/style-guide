@@ -1,6 +1,5 @@
 ---
 title: Color Palette
-layout: spec
 ---
 
 ## Main Colors
