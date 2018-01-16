@@ -3,9 +3,9 @@
   <a slot="site-title" href="{{ '/' | relative_url }}">
     {% if page.collection %}
     {% assign collection = site.collections | where: "label", page.collection | first %}
-    Style Guide - {{ collection.name }}
+    Web Style Guide - {{ collection.name }}
     {% else %}
-    Style Guide{% if page.title %} - {{page.title}}{% endif %}
+    Web Style Guide{% if page.title %} - {{page.title}}{% endif %}
     {% endif %}
   </a>
   <byu-search slot="search"></byu-search>

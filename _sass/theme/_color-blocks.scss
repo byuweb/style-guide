@@ -1,0 +1,18 @@
+
+
+@mixin color-block-inline($color) {
+    display: inline-flex;
+    align-items: center;
+    &::after {
+        content: ' ';
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        background-color: $color;
+        margin-left: 0.25em;
+    }
+}
+
+.color-block-inline-navy {
+    @include color-block-inline(#002e5d);
+}

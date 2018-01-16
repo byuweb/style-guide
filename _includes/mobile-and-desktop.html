@@ -1,0 +1,72 @@
+<style>
+    .mobile-and-desktop-viewer {
+        border: 1px solid #5F7C9B;
+        display: grid;
+        grid: auto auto / auto auto 1fr;
+    }
+
+    .mobile-and-desktop-viewer > input {
+        display: none;
+        grid-column: 1 span 0;
+    }
+
+    .mobile-and-desktop-viewer > label {
+        display: inline-block;
+        padding: 1em;
+        border-right: 1px solid #e6e6e6;
+        margin: 0;
+    }
+
+    .mobile-and-desktop-viewer > label:hover {
+        background-color: #c5c5c5;
+    }
+
+    .mobile-and-desktop-viewer > label:hover {
+        cursor: pointer;
+    }
+
+    .mobile-and-desktop-viewer > input:checked + label {
+        background-color: #e6e6e6;
+    }
+
+    .__madv_desktop, .__madv_mobile {
+        display: none;
+        grid-row: 2;
+        grid-column: span 3;
+    }
+
+    .__madv_desktop {
+        overflow-x: auto;
+    }
+
+    .__madv_desktop > img {
+        width: auto;
+    }
+
+    .__madv_mobile > img {
+        width: 375px;
+    }
+
+    .__madv_rad_desktop:checked ~ .__madv_desktop {
+        display: block;
+    }
+
+    .__madv_rad_mobile:checked ~ .__madv_mobile {
+        display: block;
+    }
+</style>
+{% capture rawid %}{{page.url}}_{{include.desktop}}_{{include.mobile}}{% endcapture %}
+{% assign id = rawid | slugify | prepend: '__madv__' %}
+<div class="mobile-and-desktop-viewer">
+    <input name="{{id}}" id="{{id}}__rad_desktop" type="radio" class="__madv_rad_desktop" checked />
+    <label for="{{id}}__rad_desktop">Desktop</label>
+    <input name="{{id}}" id="{{id}}__rad_mobile" type="radio" class="__madv_rad_mobile" />
+    <label for="{{id}}__rad_mobile">Mobile</label>
+
+    <div class="__madv_section __madv_desktop" id="{{id}}__vw_desktop">
+        <img src="{{include.desktop}}" alt="Desktop View" />
+    </div>
+    <div class="__madv_section __madv_mobile" id="{{id}}__vw_mobile">
+        <img src="{{include.mobile}}" alt="Mobile View" />
+    </div>
+</div>
