@@ -1,4 +1,4 @@
-# Footer Specs
+# Footer Specifications
 
 ## Color
 __Area Footer Background:__ #E6E6E6 (light gray)
