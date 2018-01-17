@@ -27,7 +27,6 @@ __Column Header Text:__ Vitesse Book (all caps), 20px (desktop) 18px (mobile)
 ## Size
 The Footer stretches full width by default, with the column and content area 
 of the footer being constrained to 1200px. The height of the footer is set at 295px but is flexible with content.
-Content within the gray area footer is centered.
 
 ## Footer Column
 __Dividing Line:__ 1px tall 250px long (flexible)
@@ -55,6 +54,6 @@ __Brigham Young University Logo:__ 423.44px wide 17px tall (desktop), 280px wide
 
 __Copyright Info | Address | Phone:__ Gotham, 12px (desktop) 10px (mobile), 300 weight, white
 
-The phone number is linked for accessibility.
+The phone number is linked for accessibility. Content is centered.
 
 This is not customizable, it should always stay the same.
