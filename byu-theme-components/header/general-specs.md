@@ -1,10 +1,13 @@
 # Header Specifications
 
 ## Colors
-The header is Navy (#002e5d) with usually white text.
-Links in the header are usually white.
-The exception to this is the Username for the sign in section. 
-The Username is light blue (#______)
+__Background:__ #002E5D (navy blue)
+
+__Text:__ white (unless specified)
+
+__Links:__ white (unless specified)
+
+__Username Link:__ #C3DDF9 (light blue)
 
 ## Fonts
 [put more here]
