@@ -1,5 +1,5 @@
 # Header Specifications
-full width (customizable padding) 55px tall
+The Header stretches to full width by default, the content can be constrained to custom width. The height is set at 55px.
 
 ## Colors
 __Background:__ #002E5D (navy blue)
