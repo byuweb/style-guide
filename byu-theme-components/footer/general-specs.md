@@ -30,7 +30,7 @@ These links are customizable.
 ## Footer Action Button
 225px wide 45px tall, flexible width
 
-__Background:__ #666666
+__Background:__ #666666 (medium gray)
 
 __Text:__ Vitesse Book, 20px, white
 
