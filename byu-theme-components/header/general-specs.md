@@ -1,5 +1,5 @@
 # Header Specifications
-55px tall, full width (customizable padding)
+full width (customizable padding) 55px tall
 
 ## Colors
 __Background:__ #002E5D (navy blue)
