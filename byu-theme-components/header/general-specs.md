@@ -48,14 +48,18 @@ __Search Button:__ 30px wide 30px tall, Search Icon 17px wide 14px tall, fa-sear
 # Header Specifications (Mobile Differences)
 55px tall (but grows with title), the breakpoint for when the header switched to mobile can be customized and changed to any number.
 
-## Left Side
-__BYU Logo:__ 100px wide 29px tall
+## Colors
+__Dividing Line (Below Search Box):__ #C5C5C5 (light gray)
 
+## Fonts
 __One Line Title:__ Vitesse Book, 18px
 
 __Two Line Title:__ Vitesse Book, 16px
 
 __Subtitle:__ Vitesse Book, 12px
+
+## Left Side
+__BYU Logo:__ 100px wide 29px tall
 
 ## Right Side
 __Menu Icon:__ 20px wide 17px tall
@@ -65,6 +69,6 @@ __Search Box:__ Full width of screen 35px tall
 
 __Search Button:__ 53px wide 35px tall
 
-__Dividing Line (Below Search Box):__ Full width 1px tall, #C5C5C5 (light gray)
+__Dividing Line (Below Search Box):__ Full width 1px tall
 
 Note: The "B" in the BYU logo is horizontally aligned with the first letter in the search box.
