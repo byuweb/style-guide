@@ -10,7 +10,11 @@ __Links:__ white (unless specified)
 __Username Link:__ #C3DDF9 (light blue)
 
 ## Fonts
-[put more here]
+__One Line Title:__ Vitesse Book, 22px
+
+__Second Line Subtitle:__ Vitesse Book, 14px, options for subtitle to be above or below main title, option to italicize
+
+__Sign In/Out:__ Gotham, 13px, 400 weight
 
 ## Desktop
 
