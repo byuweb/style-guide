@@ -31,7 +31,7 @@ usability. There are a few cases where a menu is not neccessary (perhaps a singl
 
 # Menu Specifications (Mobile Differences)
 The Menu will change into a drop down menu from below the Header. A hamburger menu icon will appear on the right side.
-The first line of the menu will always be Sign In/Out/My Account with their respective icons.
+The first line of the menu will always be Sign In/Out/My Account with their respective icons. Action button links to the left of the logged in user's first name will be added to the bottom of the mobile menu.
 
 ## Colors
 __Action Button Links Background:__ #E6E6E6 (light gray)
