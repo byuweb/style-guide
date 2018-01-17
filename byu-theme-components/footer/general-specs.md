@@ -22,18 +22,27 @@ Content within the gray area footer is centered.
 
 ## Footer Social Media Icons
 __Minimum size:__ 25px tall 25px wide
+
 __Available links:__ Facebook, Instagram, Twitter, Google Plus, Linkedin, Youtube, RSS, Snapchat, Podcast
+
 These links are customizable.
 
 ## Footer Action Button
 225px wide 45px tall, flexible width)
+
 __Background:__ #666666
+
 __Text:__ Vitesse Book, 20px, white
+
 Drop shadow appears when hovered
 
 ## University Footer
 __Background:__ #002E5D (navy blue) white text. 
+
 __Brigham Young University Logo:__ 423.44px wide 17px tall (desktop), 280px wide 12px tall (mobile)
+
 __Copyright Info | Address | Phone:__ Gotham, 12px (desktop) 10px (mobile), 300 weight, white
+
 The phone number is linked for accessibility.
+
 This is not customizable, it should always stay the same.
