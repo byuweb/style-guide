@@ -24,7 +24,7 @@ __Second Line Subtitle:__ Vitesse Book, 14px, options for subtitle to be above o
 
 __Sign In/Out Link:__ Gotham (all caps), 13px, 400 weight
 
-__Username Link:__ Gotham (first letter caps) 13px, 400 weight, #C3DDF9 (light blue)
+__Username Link:__ Gotham (first letter caps) 13px, 400 weight
 
 __Search Box Text (Inactive/Active):__ Gotham, 13px, 400 weight
 
