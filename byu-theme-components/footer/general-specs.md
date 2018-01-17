@@ -28,7 +28,7 @@ __Available links:__ Facebook, Instagram, Twitter, Google Plus, Linkedin, Youtub
 These links are customizable.
 
 ## Footer Action Button
-225px wide 45px tall, flexible width)
+225px wide 45px tall, flexible width
 
 __Background:__ #666666
 
