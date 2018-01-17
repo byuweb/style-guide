@@ -3,22 +3,34 @@
 ## Color
 __Area Footer Background:__ #E6E6E6 (light gray)
 
-__Non-link Text:__ Gotham, 13px, 300 weight, #141414 (dark gray)
+__Non-link Text:__ #141414 (dark gray)
 
-__Link Text:__ Gotham, 13px, 300 weight, #666666 (medium gray)
+__Link Text:__ #666666 (medium gray)
 
-__Hover Text:__ Gotham, 13px, 300 weight, #002E5D (navy blue)
+__Hover Text:__ #002E5D (navy blue)
 
-__Column Header Text:__ Vitesse Book (all caps), 20px (desktop) 18px (mobile), #002E5D (navy blue)
+__Column Header Text:__ #002E5D (navy blue)
 
-__Dividing Line:__ 1px tall 250px long (flexible), #C5C5C5 (gray)
+__Dividing Line:__ #C5C5C5 (gray)
 
 __University Footer Background:__ #002E5D (navy blue)
+
+## Fonts
+__Non-link Text:__ Gotham, 13px, 300 weight
+
+__Link Text:__ Gotham, 13px, 300 weight
+
+__Hover Text:__ Gotham, 13px, 300 weight
+
+__Column Header Text:__ Vitesse Book (all caps), 20px (desktop) 18px (mobile)
 
 ## Size
 The Footer stretches full width by default, with the column and content area 
 of the footer being constrained to 1200px. The height of the footer is set at 295px but is flexible with content.
 Content within the gray area footer is centered.
+
+## Footer Column
+__Dividing Line:__ 1px tall 250px long (flexible)
 
 ## Footer Social Media Icons
 __Minimum size:__ 25px tall 25px wide
