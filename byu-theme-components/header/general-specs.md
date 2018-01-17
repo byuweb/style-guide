@@ -1,4 +1,5 @@
 # Header Specifications
+55px tall, full width (customizable padding)
 
 ## Colors
 __Background:__ #002E5D (navy blue)
@@ -31,7 +32,7 @@ __Search Box Text (Inactive/Active):__ Gotham, 13px, 400 weight
 ## Left Side
 Top and bottom of the BYU logo align perfectly with the top and bottom of a two-line title. If it is only one-line, the title centers vertically.
 
-__BYU logo:__ 116px wide 33.14px tall
+__BYU Logo:__ 116px wide 33.14px tall
 
 ## Right Side
 Options for Sign in/out link, button links, and a search box. When signed in, the first name of the user is displayed with up to 17 characters with an ellipses at the end if longer than 17 characters. If button links are added to the left of the user's name, character limit on the user's first name with ellipses will vary.
@@ -44,8 +45,17 @@ __Search Box:__ 200px wide 30px tall
 
 __Search Button:__ 30px wide 30px tall, Search Icon 17px wide 14px tall, fa-search
 
-## Desktop
-55px tall, full width (customizable padding)
+# Header Specifications (Mobile Differences)
+55px tall (but grows with title), the breakpoint for when the header switched to mobile can be customized and changed to any number.
 
-## Mobile
-55px tall, the breakpoint for when the header switched to mobile can be customized and changed to any number.
+## Left Side
+__BYU Logo:__ 100px wide 29px tall
+
+__One Line Title:__ Vitesse Book, 18px
+
+__Two Line Title:__ Vitesse Book, 16px
+
+__Subtitle:__ Vitesse Book, 12px
+
+## Right Side
+__Menu Icon:__ 20px wide 17px tall
