@@ -14,7 +14,11 @@ __One Line Title:__ Vitesse Book, 22px
 
 __Second Line Subtitle:__ Vitesse Book, 14px, options for subtitle to be above or below main title, option to italicize
 
-__Sign In/Out:__ Gotham, 13px, 400 weight
+__Sign In:__ Gotham (all caps), 13px, 400 weight
+
+__Sign Out:__ Gotham (all caps), 13px, 400 weight, #FFFFFF (white)
+
+__Signed In User:__ Gotham (first letter caps) 13px, 400 weight, #C3DDF9 (light blue)
 
 ## Desktop
 
