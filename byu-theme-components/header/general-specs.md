@@ -59,3 +59,12 @@ __Subtitle:__ Vitesse Book, 12px
 
 ## Right Side
 __Menu Icon:__ 20px wide 17px tall
+
+## Mobile Search Bar
+__Search Box:__ Full width of screen 35px tall
+
+__Search Button:__ 53px wide 35px tall
+
+__Dividing Line (Below Search Box):__ Full width 1px tall, #C5C5C5 (light gray)
+
+Note: The "B" in the BYU logo is horizontally aligned with the first letter in the search box.
