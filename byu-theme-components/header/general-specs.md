@@ -35,7 +35,7 @@ Top and bottom of the BYU logo align perfectly with the top and bottom of a two-
 __BYU Logo:__ 116px wide 33.14px tall
 
 ## Right Side
-Options for Sign in/out link, button links, and a search box. When signed in, the first name of the user is displayed with up to 17 characters with an ellipses at the end if longer than 17 characters. If button links are added to the left of the user's name, character limit on the user's first name with ellipses will vary.
+Options for Sign in/out link, button links, and a search box. When signed in, the first name of the user is displayed with up to 17 characters with an ellipses at the end if longer than 17 characters. If action button links are added to the left of the user's name, character limit on the user's first name with ellipses will vary.
 
 __Sign In Link:__ Icon 20px wide 20px tall, fa-user-circle-o 
 
