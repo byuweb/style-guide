@@ -2,11 +2,17 @@
 
 ## Color
 __Area Footer Background:__ #E6E6E6 (light gray)
+
 __Non-link Text:__ Gotham, 13px, 300 weight, #141414 (dark gray)
+
 __Link Text:__ Gotham, 13px, 300 weight, #666666 (medium gray)
+
 __Hover Text:__ Gotham, 13px, 300 weight, #002E5D (navy blue)
+
 __Column Header Text:__ Vitesse Book (all caps), 20px (desktop) 18px (mobile), #002E5D (navy blue)
+
 __Dividing Line:__ 1px tall 250px long (flexible), #C5C5C5 (gray)
+
 __University Footer Background:__ #002E5D (navy blue)
 
 ## Size
