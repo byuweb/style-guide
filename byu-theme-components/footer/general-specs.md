@@ -1,4 +1,6 @@
 # Footer Specifications
+The Footer stretches full width by default, with the column and content area 
+of the footer being constrained to 1200px. The height of the footer is set at 295px but is flexible with content.
 
 ## Color
 __Area Footer Background:__ #E6E6E6 (light gray)
@@ -23,10 +25,6 @@ __Link Text:__ Gotham, 13px, 300 weight
 __Hover Text:__ Gotham, 13px, 300 weight
 
 __Column Header Text:__ Vitesse Book (all caps), 20px (desktop) 18px (mobile)
-
-## Size
-The Footer stretches full width by default, with the column and content area 
-of the footer being constrained to 1200px. The height of the footer is set at 295px but is flexible with content.
 
 ## Footer Column
 __Dividing Line:__ 250px wide (flexible) 1px tall
