@@ -2,7 +2,7 @@
 The Footer stretches full width by default, with the column and content area 
 of the footer being constrained to 1200px. The height of the footer is set at 295px but is flexible with content.
 
-## Color
+## Colors
 __Area Footer Background:__ #E6E6E6 (light gray)
 
 __Non-link Text:__ #141414 (dark gray)
