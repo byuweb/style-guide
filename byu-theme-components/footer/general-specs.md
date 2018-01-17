@@ -29,7 +29,7 @@ The Footer stretches full width by default, with the column and content area
 of the footer being constrained to 1200px. The height of the footer is set at 295px but is flexible with content.
 
 ## Footer Column
-__Dividing Line:__ 1px tall 250px long (flexible)
+__Dividing Line:__ 250px wide (flexible) 1px tall
 
 ## Footer Social Media Icons
 __Minimum size:__ 25px tall 25px wide
