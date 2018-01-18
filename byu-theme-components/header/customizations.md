@@ -9,7 +9,14 @@ Custom links can be added to the BYU logo as well as the site title and subtitle
 
 __Custom BYU Logo Link:__ Specify a _home-url_ attribute on the byu-header element (i.e. <byu-header home-url="http://web.byu.edu">...</byu-header>).
 
-__Custom Site Title, Subtitle and Supertitle Links:__ Add an anchor tag as your byu-header slot or nest an anchor tag within your byu-header span slot. { <a slot="site-title" href="#">...</a> } OR { <span slot="site-title"><a href="#">...</a></span> }
+__Custom Site Title, Subtitle and Supertitle Links:__ Add an anchor tag as your byu-header slot or nest an anchor tag within your byu-header span slot. 
+~~~~
+<a slot="site-title" href="#">...</a>
+~~~~ 
+OR 
+~~~~
+<span slot="site-title"><a href="#">...</a></span> 
+~~~~
 
 ## Search Bar
 Add a search bar to your header by inserting the following code within your byu-header element: <byu-search slot="search" action="https://www.google.com/#q=$1" method="get" placeholder="Search"></byu-search>
