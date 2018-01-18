@@ -10,8 +10,10 @@ __Column Width:__ Columns may be double-wide by adding the class "double-wide". 
 
 __Custom Content:__ You don't have to use byu-footer-columns inside the byu-footer. Although we highly recommend using the byu-footer-columns, you may customize the content of your footer. Any child element of byu-footer will be treated and styled as a byu-footer-column.
 
-## Social Media Icons
+## Social Media Links
+The byu-social-media-links contain the following social media icons: Facebook, Instagram, Twitter, Google Plus, Linkedin, Youtube, RSS, Snapchat, and Podcast.
 
+__Custom Links:__ You may customize your own links by setting the background-image on your link. SVG images work the best.
 
 ## University Footer
 This is not customizable, it should always stay the same.
