@@ -1,7 +1,7 @@
 # Footer Customizations
 By default, if you have set a _max-width_ or _full-width_ attribute on the byu-header element, byu-footer will discover and use that setting. However, the byu-footer element allows you to override the width setting by adding _max-width_ to the byu-footer which can be any arbitrary pixel value. The byu-footer element also allows you to set the footer to be the full-width of the page by adding the _full-width_ attribute to the byu-footer.
 
-At the very least, your site should use the University Footer (the blue footer with the BYU logo and info). The byu-footer gives the option to use a Site Footer which allows you to embed your own links and content in the footer. This is done by placing byu-footer-column elements in the footer, which will add a footer area above the University Footer.
+At the very least, your site should use the University Footer (the blue bar with the BYU logo and info). The byu-footer gives the option to use a Site Footer which allows you to embed your own links and content in the footer. This is done by placing byu-footer-column elements in the footer, which will add a footer area above the University Footer.
 
 ## Columns
 The standard default is to have 4 column regions, however the byu-footer allows for 2-5 column regions depending on content.
