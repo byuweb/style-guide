@@ -7,7 +7,10 @@ You can set a subtitle or supertitle to go along with your site title. To set a 
 ## Custom Links
 Custom links can be added to the BYU logo as well as the site title and subtitles/supertitles.
 
-__Custom BYU Logo Link:__ Specify a _home-url_ attribute on the byu-header element (i.e. <byu-header home-url="http://web.byu.edu">...</byu-header>).
+__Custom BYU Logo Link:__ Specify a _home-url_ attribute on the byu-header element.
+~~~~
+<byu-header home-url="http://web.byu.edu">...</byu-header>
+~~~~
 
 __Custom Site Title, Subtitle and Supertitle Links:__ Add an anchor tag as your byu-header slot or nest an anchor tag within your byu-header span slot. 
 ~~~~
