@@ -19,15 +19,20 @@ OR
 ~~~~
 
 ## Search Bar
-Add a search bar to your header by inserting the following code within your byu-header element: <byu-search slot="search" action="https://www.google.com/#q=$1" method="get" placeholder="Search"></byu-search>
+Add a search bar to your header by inserting the following code within your byu-header element: 
+~~~~
+<byu-search slot="search" action="https://www.google.com/#q=$1" method="get" placeholder="Search"></byu-search>
+~~~~
 
 ## Sign In/Out
 Add a sign in/out option with the user's username for your users by inserting the following code within your byu-header element: 
+~~~~
 <byu-user-info slot="user">
     <a slot="login" href="#login">Sign In</a>
     <a slot="logout" href="#logout">Sign Out</a>
     <span slot="user-name">UserFirstName</span>
 </byu-user-info>
+~~~~
 
 ## Header Width Options
 By default the byu-header has a width of 1200px. To customize this width, just add a _max-width_ attribute to the header with a specified pixel value. The _max-width_ should be larger than the _mobile-max-width_ attribute which you can use to customize the breakpoint for when the mobile header will show.
