@@ -1,8 +1,8 @@
 # Header Customizations
-The byu-header gives you a load of options that you can use to customize your header to include everything you need. At the very minimum your header may only need the given blue bar with the BYU logo and your site title.
+The byu-header gives you lots of options that you can use to customize your header to include everything you need. At the very minimum your header may only need the given blue bar with the BYU logo and your site title.
 
 ## Subtitles and Supertitles
-You can set a subtitle or supertitle to go along with your site title. To set a supertitle, just place the element with class "subtitle" above the site-title. These subtitles/supertitles can be further customized to be italicized with a style attribute.
+The byu-header allows you to set a subtitle or supertitle to go along with your site title. To set a supertitle, just place the element with class "subtitle" above the site-title. These subtitles/supertitles can be further customized to be italicized with a style attribute.
 
 ## Custom Links
 Custom links can be added to the BYU logo as well as the site title and subtitles/supertitles.
@@ -22,7 +22,7 @@ OR
 ~~~~
 
 ## Search Bar
-Add a search bar to your header by inserting the following code within your byu-header element: 
+The byu-header allows you to add a search bar to your header by inserting the following code within your byu-header element: 
 ~~~~
 <byu-search slot="search" action="https://www.google.com/#q=$1" method="get" placeholder="Search"></byu-search>
 ~~~~
