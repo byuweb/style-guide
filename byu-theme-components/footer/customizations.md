@@ -13,7 +13,7 @@ __Custom Content:__ The byu-footer doesn't force the use of byu-footer-columns. 
 ## Social Media Links
 The byu-social-media-links contain the following social media icons: Facebook, Instagram, Twitter, Google Plus, Linkedin, Youtube, RSS, Snapchat, and Podcast.
 
-__Custom Links:__ The byu-social-media-links element allows you to customize your own links by setting the background-image on your link. SVG images work the best.
+__Custom Links:__ The byu-social-media-links element used within the byu-footer allows you to customize your own links by setting the background-image on your link. SVG images work the best.
 
 ## University Footer
 This is not customizable, it should always stay the same.
