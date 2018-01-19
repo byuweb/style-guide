@@ -15,10 +15,13 @@ Sites may optionally add a [site-specific footer](site-footer.html) above the un
 Everything besides the header and footer may be designed according to a site's unique needs, though designers and developers are encouraged to use the 
 [Components]({{'/specs_components/' | relative_url}}) and [Patterns]({{'/specs_patterns/' | relative_url}}) that have been developed by the Web Community.
 
-![Example Page Layout](speeches-layout-example.png)
+{% include image.html src='speeches-layout-example.png' caption='Required, optional, and site-specific page regions' %}
 
 ## Implementation
 
 While these specifications aim to be complete enough to allow you to implement the theme yourself, the Web Community maintains implementations of the theme
-for various environments and CMSes, including Drupal and Wordpress.  You can find more information at [the Web Community site](http://webcommunity.byu.edu/byu-theme), 
-and you can find help implementing the theme in the [Web Community Slack Team](https://byu-web.slack.com/messages/byu-theme-help/).
+for various environments and content management systems, including Drupal and Wordpress. 
+You can find more information at [the Web Community site](http://webcommunity.byu.edu/byu-theme), 
+and you can get help implementing the theme in the [Web Community Slack Team](https://byu-web.slack.com/messages/byu-theme-help/).
+
+

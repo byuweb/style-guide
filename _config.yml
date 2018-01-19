@@ -102,3 +102,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - readme-images/
+  - example/
+  - .idea/
+  - .vscode/
+  - image-sources/

@@ -1,0 +1,58 @@
+
+@import '../theme/colors';
+
+.mobile-and-desktop-viewer {
+    border: 1px solid $accent_blue;
+    display: grid;
+    grid: auto auto / auto auto 1fr;
+}
+
+.mobile-and-desktop-viewer > input {
+    display: none;
+    grid-column: 1 span 0;
+}
+
+.mobile-and-desktop-viewer > label {
+    display: inline-block;
+    padding: 1em;
+    border-right: 1px solid $gray_light;
+    margin: 0;
+}
+
+.mobile-and-desktop-viewer > label:hover {
+    background-color: $gray;
+}
+
+.mobile-and-desktop-viewer > label:hover {
+    cursor: pointer;
+}
+
+.mobile-and-desktop-viewer > input:checked + label {
+    background-color: $gray_light;
+}
+
+.__madv_desktop, .__madv_mobile {
+    display: none;
+    grid-row: 2;
+    grid-column: span 3;
+}
+
+.__madv_desktop {
+    overflow-x: auto;
+}
+
+.__madv_desktop > img {
+    width: auto;
+}
+
+.__madv_mobile > img {
+    width: 375px;
+}
+
+.__madv_rad_desktop:checked ~ .__madv_desktop {
+    display: block;
+}
+
+.__madv_rad_mobile:checked ~ .__madv_mobile {
+    display: block;
+}
