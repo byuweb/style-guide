@@ -90,7 +90,7 @@ The specification should explain:
     * And differences at those breakpoints
 5. Colors
     * Different shades of each, when and where to each, and what colors of text are allowed with each.
-    * Sizing & Measurements
+6. Sizing & Measurements
     * Present measurements with consideration to the CSS box model.
     * When appropriate, the measurement should or can be a percentage. Please be aware of trying to make designs fluid.
     * Please be comfortable with using and understanding flexbox.
