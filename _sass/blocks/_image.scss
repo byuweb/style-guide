@@ -37,7 +37,7 @@
     transform:skew(8deg) rotate(3deg);
 }
 
-.captioned-image-caption {
+.captioned-image-caption:not(:empty) {
     box-sizing: border-box;
     width: 100%;
     text-align: center;

@@ -4,8 +4,6 @@
         <img src="{{include.src}}" alt="{% if include.alt %}{{include.alt}}{% else %}{{include.caption}}{% endif %}" 
             class="captioned-image-image"
             {% if include.maxWidth %}style="max-width: {{include.maxWidth}};"{% endif %} />
-        <span class="captioned-image-caption">
-            {{include.caption}}
-        </span>
+        <span class="captioned-image-caption">{{include.caption}}</span>
     </div>
 </div>

@@ -106,4 +106,5 @@ exclude:
   - example/
   - .idea/
   - .vscode/
-  - image-sources/
+  - .git/
+  # - image-sources/

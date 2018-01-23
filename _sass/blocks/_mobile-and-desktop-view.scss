@@ -2,9 +2,13 @@
 @import '../theme/colors';
 
 .mobile-and-desktop-viewer {
-    border: 1px solid $accent_blue;
     display: grid;
     grid: auto auto / auto auto 1fr;
+
+    .captioned-image {
+        margin: 0;
+        background-color: $gray_light;
+    }
 }
 
 .mobile-and-desktop-viewer > input {
@@ -15,7 +19,7 @@
 .mobile-and-desktop-viewer > label {
     display: inline-block;
     padding: 1em;
-    border-right: 1px solid $gray_light;
+    border: 1px solid $gray_light;
     margin: 0;
 }
 
@@ -41,18 +45,14 @@
     overflow-x: auto;
 }
 
-.__madv_desktop > img {
+.__madv_desktop img {
     width: auto;
 }
 
-.__madv_mobile > img {
-    width: 375px;
+.__madv_mobile img {
+    width: 750px;
 }
 
-.__madv_rad_desktop:checked ~ .__madv_desktop {
-    display: block;
-}
-
-.__madv_rad_mobile:checked ~ .__madv_mobile {
+.__madv_rad_desktop:checked ~ .__madv_desktop, .__madv_rad_mobile:checked ~ .__madv_mobile {
     display: block;
 }

@@ -9,7 +9,7 @@ At the top of every BYU page should be the University header.  It includes a BYU
 
 ## General Layout
 
-The site header spans the width of the user's viewport and is 55 pixels tall. The background is navy, and text is white.
+The site header spans the width of the user's viewport and is 55 pixels tall. The background is {% include color.html color='navy' %}, and text is white.
 
 On the left side of the header is a white version of the [BYU institutional monogram](https://identity.byu.edu/institutional/logos/monogram/)
 followed by the site-specific title and a subtitle or supertitle.
@@ -17,7 +17,7 @@ followed by the site-specific title and a subtitle or supertitle.
 On desktop, the right site is occupied by site-specific actions, user login/logout, 
 and site search.  On mobile, the right side has a button to trigger a dropdown menu containing site action links, user login/logout, and navigation, and the search field moves below the blue bar.
 
-{% include mobile-and-desktop.html desktop='images/all-header-options-desktop.png' mobile='images/all-header-options-mobile.png' %}
+{% include mobile-and-desktop.html caption='Header Overview' desktop='images/all-header-options-desktop.png' mobile='images/all-header-options-mobile.png' %}
 
 ## BYU Logo
 
@@ -27,7 +27,7 @@ The logo, [available here](https://cdn.byu.edu/shared-icons/latest/logos/monogra
 is 114px wide and 33px tall. It is positioned 16px from the left side and 11px from the top. There are 16px between the right edge of the logo and the left edge of the site title.
 
 In mobile layouts, it is possible that the top bar will expand vertically in order to accommodate
-long site titles.  In this case, the logo keeps the same positioning.
+long site titles.  In this case, the logo keeps the same positioning, 11px from the top.
 
 {% include image.html src='images/logo-positioning.png' caption='Logo Positioning' %}
 
@@ -40,7 +40,7 @@ The site title uses the "Vitesse" font stack. On desktop views, the main title h
 On mobile, this is reduced to 16px for the main title and 12px for the sub or super title to help accommodate long
 site titles and limited screen space. 
 
-{% include image.html src='images/desktop-single-line.png' caption='Simple title - Desktop' %}
+{% include mobile-and-desktop.html desktop='images/desktop-single-line.png' mobile='images/mobile-single-line.png' caption='Simple title' %}
 
 {% include image.html src='images/desktop-supertitle.png' caption='Title with supertitle - Desktop' %}
 

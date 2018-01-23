@@ -1,6 +1,6 @@
 #!/bin/sh
 
-bundle exec jekyll serve
+bundle exec jekyll serve --incremental
 
 #docker build -f Dockerfile-dev . -t byu-style-guide-dev
 
