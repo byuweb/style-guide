@@ -1,0 +1,22 @@
+
+<byu-header role="banner" >
+  <a slot="site-title" href="{{ '/' | relative_url }}">
+    {% if page.collection %}
+    {% assign collection = site.collections | where: "label", page.collection | first %}
+    Style Guide - {{ collection.name }}
+    {% else %}
+    Style Guide{% if page.title %} - {{page.title}}{% endif %}
+    {% endif %}
+  </a>
+  <a slot="site-title" class="subtitle" href="http://webcommunity.byu.edu">Web Community</a>
+  <byu-search slot="search"></byu-search>
+  <byu-menu slot="nav">
+    {% assign collections = site.collections | sort: 'order' %}
+    {% for collection in collections %}
+      {% if collection.label != "posts" %}
+      <a class="{% if collection.label == page.collection %}active{% endif %}"
+        href="{{collection.label | relative_url}}">{{collection.name}}</a>
+      {% endif %}
+    {% endfor %}
+  </byu-menu>
+</byu-header>

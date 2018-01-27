@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ '/assets/spec.css' | relative_url }}">
+
+<style>
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .spec-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main {
+    padding: 8px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+
+  .secondary-nav {
+    background-color: #e6e6e6;
+    color: #002e5d;
+    text-align: center;
+    box-sizing: border-box;
+
+    font-family: Gotham A,Gotham B,Helvetica,sans-serif;
+  }
+
+  .secondary-nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+
+  .secondary-nav ul li {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+    flex: 1;
+    max-width: 300px;
+
+    font-size: 13px!important;
+    text-transform: uppercase!important;
+  }
+
+  .secondary-nav ul li:hover, .secondary-nav ul li.active {
+    background-color: #c5c5c5;
+  }
+
+  .secondary-nav a {
+    color: #002e5d;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .main img {
+    max-width: 100%;
+  }
+</style>
+
+<div class="spec-wrapper">
+  {% if page.collection %}
+  <div class="secondary-nav">
+    {% assign collection = site.collections | where: "label", page.collection | first %}
+    {% assign docs = collection.docs | where_exp:"item","item.title != 'Index'" | sort: "title" | sort: "order" %}
+    <ul>
+    {% for doc in docs %}
+      <li class="{% if doc.url == page.url %}active{% endif %}"><a href="{{doc.url | relative_url}}">{{doc.title}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  <div class="main">{{ content }}</div>
+</div>

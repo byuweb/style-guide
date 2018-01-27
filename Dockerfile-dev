@@ -1,0 +1,33 @@
+FROM bitnami/ruby:latest
+
+WORKDIR /usr/src/app-setup
+
+RUN install_packages make gcc locales
+
+# Fix locales
+RUN dpkg-reconfigure locales && \
+  locale-gen C.UTF-8 && \
+  /usr/sbin/update-locale LANG=C.UTF-8
+
+# Install needed default locale for Makefly
+RUN echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && \
+  locale-gen
+
+# Set default locale for the environment
+ENV LC_ALL C.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
+
+COPY Gemfile Gemfile.lock /usr/src/app-setup/
+
+RUN bundle
+
+WORKDIR /www
+
+VOLUME /www
+
+EXPOSE 4000
+
+EXPOSE 35729
+
+CMD ["bundle", "exec", "jekyll", "serve", "--incremental", "--force_polling", "-H", "0.0.0.0", "-P", "4000"]

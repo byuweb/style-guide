@@ -1,0 +1,22 @@
+
+{% capture rawid %}{{page.url}}_{{include.desktop}}_{{include.mobile}}{% endcapture %}
+{% assign id = rawid | slugify | prepend: '__madv__' %}
+
+<div class="mobile-and-desktop-viewer">
+    <!-- <div class="__madv_inner"> -->
+    <input name="{{id}}" id="{{id}}__rad_desktop" type="radio" class="__madv_rad_desktop" checked />
+    <label for="{{id}}__rad_desktop">Desktop</label>
+    <input name="{{id}}" id="{{id}}__rad_mobile" type="radio" class="__madv_rad_mobile" />
+    <label for="{{id}}__rad_mobile">Mobile</label>
+
+    <div class="__madv_section __madv_desktop" id="{{id}}__vw_desktop">
+        <!-- <img src="{{include.desktop}}" alt="Desktop View" /> -->
+        {% include image.html src=include.desktop caption=include.caption %}
+    </div>
+    <div class="__madv_section __madv_mobile" id="{{id}}__vw_mobile">
+        <!-- <img src="{{include.mobile}}" alt="Mobile View" /> -->
+        {% include image.html src=include.mobile caption=include.caption %}
+    </div>
+    <!-- </div> -->
+    <!-- <div class="__madv_caption">{{}}</div> -->
+</div>

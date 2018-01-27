@@ -1,0 +1,22 @@
+<head>
+  <link rel="preload" href="https://cdn.byu.edu/byu-theme-componenets/latest/byu-theme-components.min.css">
+  <link rel="preload" href="https://cloud.typography.com/75214/6517752/css/fonts.css">
+  <link rel="preload" href="https://cdn.byu.edu/byu-theme-componenets/latest/byu-theme-components.min.js">
+  <link rel="preload" href="https://cdn.byu.edu/byu-theme-componenets/latest/components.min.js">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://cloud.typography.com/75214/6517752/css/fonts.css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
+  <script async src="https://cdn.byu.edu/byu-theme-components/latest/byu-theme-components.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+ 
+</head>

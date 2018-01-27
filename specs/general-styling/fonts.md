@@ -1,3 +1,8 @@
+---
+title: Typography
+layout: spec
+---
+
 This file should include a concise list of font styles. This should be limited to only a few font styles, and will likely utilize the general font styles.
 
 ## Our Fonts

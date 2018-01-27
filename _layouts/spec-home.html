@@ -1,0 +1,7 @@
+---
+layout: spec
+---
+
+{% assign collection = site.collections | where: "label", page.collection | first %}
+
+{{ content }}
